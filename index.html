@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <style>
+            /* Global Reset & Font */
+            * {
+                box-sizing: border-box;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Body Styling */
+            body {
+                background: linear-gradient(
+                    to bottom right,
+                    #fdf6f6,
+                    rgba(128, 0, 0, 0.05)
+                );
+                padding: 30px;
+                color: #333;
+            }
+
+            /* Container */
+            .container {
+                background: #fff;
+                border-radius: 12px;
+                padding: 30px;
+                max-width: 900px;
+                margin: auto;
+                box-shadow: 0 8px 20px rgba(128, 0, 0, 0.15);
+                transition: box-shadow 0.3s ease;
+            }
+
+            .container:hover {
+                box-shadow: 0 12px 25px rgba(128, 0, 0, 0.25);
+            }
+
+            /* Headings */
+            h1 {
+                color: maroon;
+                text-align: center;
+                font-size: 2.5em;
+                margin-bottom: 25px;
+                letter-spacing: 1px;
+            }
+
+            h2 {
+                color: maroon;
+                text-decoration: underline;
+                margin-top: 40px;
+                margin-bottom: 15px;
+                font-size: 1.8em;
+            }
+
+            /* Paragraphs */
+            p {
+                line-height: 1.8;
+                font-size: 1.05em;
+                margin-bottom: 20px;
+            }
+
+            /* Lists */
+            ul {
+                padding-left: 25px;
+                margin-bottom: 25px;
+            }
+
+            li {
+                margin-bottom: 10px;
+                line-height: 1.7;
+                position: relative;
+                padding-left: 25px;
+                transition: color 0.3s ease;
+                list-style: none;
+            }
+
+            li::before {
+                content: "➤";
+                position: absolute;
+                left: 0;
+                color: maroon;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+            li:hover {
+                color: maroon;
+            }
+
+            /* Highlight Box */
+            .highlight {
+                background-color: rgba(128, 0, 0, 0.08);
+                padding: 15px 20px;
+                border-left: 6px solid maroon;
+                margin-top: 30px;
+                font-weight: bold;
+                font-size: 1.1em;
+                border-radius: 6px;
+            }
+
+            /* Tables */
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 30px;
+                font-size: 1em;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid maroon;
+            }
+
+            th {
+                background: linear-gradient(to right, maroon, #800000cc);
+                color: white;
+                padding: 12px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            td {
+                padding: 10px;
+                text-align: center;
+                transition: background-color 0.3s ease;
+            }
+
+            tr:hover td {
+                background-color: rgba(128, 0, 0, 0.07);
+            }
+
+            /* Responsive Enhancements */
+            @media (max-width: 600px) {
+                .container {
+                    padding: 20px;
+                }
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                h2 {
+                    font-size: 1.5em;
+                }
+
+                th,
+                td {
+                    font-size: 0.9em;
+                    padding: 8px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1><br /><br />The Elite Fours' Project</h1>
+        <div style="display: flex; justify-content: center">
+            <div class="container">
+                <h2>Common Types of Solid Fuels</h2>
+                <ul>
+                    <li>Coal</li>
+                    <li>Firewood</li>
+                    <li>Peats</li>
+                </ul>
+                <h2>Coal</h2>
+                <p>
+                    <strong>Definition:</strong> Coal is a combustible
+                    sedimentary rock formed from ancient plant matter, used
+                    primarily for electricity and industrial heat.
+                </p>
+
+                <h3>Advantages:</h3>
+                <ul>
+                    <li>High energy density</li>
+                    <li>Reliable and consistent power source</li>
+                    <li>Widely available with established infrastructure</li>
+                    <li>Supports industrial and economic activity</li>
+                </ul>
+
+                <h3>Disadvantages:</h3>
+                <ul>
+                    <li>High carbon emissions and air pollution</li>
+                    <li>Non-renewable and environmentally damaging</li>
+                    <li>Health risks from mining and combustion</li>
+                    <li>Expensive to clean and regulate</li>
+                </ul>
+
+                <h3>Applications:</h3>
+                <ul>
+                    <li>Electricity generation in coal-fired power plants</li>
+                    <li>Steel and cement manufacturing</li>
+                    <li>Industrial boilers and furnaces</li>
+                </ul>
+
+                <h2>Peat</h2>
+                <p>
+                    <strong>Definition:</strong> Peat is partially decomposed
+                    organic matter found in waterlogged environments, used as
+                    fuel and soil conditioner.
+                </p>
+
+                <h3>Advantages:</h3>
+                <ul>
+                    <li>Ignites easily and burns slowly</li>
+                    <li>Locally available in some regions</li>
+                    <li>Useful in horticulture for moisture retention</li>
+                </ul>
+
+                <h3>Disadvantages:</h3>
+                <ul>
+                    <li>Low energy density</li>
+                    <li>Environmental damage to peatlands</li>
+                    <li>Releases carbon when burned</li>
+                    <li>Non-renewable on human timescales</li>
+                </ul>
+
+                <h3>Applications:</h3>
+                <ul>
+                    <li>Domestic heating in peat-rich regions</li>
+                    <li>Fuel for small-scale stoves and boilers</li>
+                    <li>Soil amendment in gardening and agriculture</li>
+                </ul>
+
+                <h2>Firewood</h2>
+                <p>
+                    <strong>Definition:</strong> Firewood is wood that has been
+                    cut and dried for use as fuel, typically sourced from trees
+                    and used in stoves or fireplaces.
+                </p>
+
+                <h3>Advantages:</h3>
+                <ul>
+                    <li>Renewable if harvested sustainably</li>
+                    <li>Carbon-neutral over time</li>
+                    <li>Cost-effective when locally sourced</li>
+                    <li>Simple and accessible technology</li>
+                </ul>
+
+                <h3>Disadvantages:</h3>
+                <ul>
+                    <li>Air pollution from smoke and particulates</li>
+                    <li>Labor-intensive to prepare and store</li>
+                    <li>Lower energy density than coal</li>
+                    <li>Risk of deforestation if mismanaged</li>
+                </ul>
+
+                <h3>Applications:</h3>
+                <ul>
+                    <li>Home heating in wood stoves and fireplaces</li>
+                    <li>Cooking in traditional or outdoor setups</li>
+                    <li>Fuel for biomass boilers and rural energy systems</li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Fuel Type</td>
+                            <td>Cost Effectiveness</td>
+                            <td>Efficiency</td>
+                            <td>Environmental Friendly</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Coal</td>
+                            <td>Expensive</td>
+                            <td>High Efficiency</td>
+                            <td>Have high carbon emmision</td>
+                        </tr>
+                        <tr>
+                            <td>Peats</td>
+                            <td>Medium Cost</td>
+                            <td>Medium Efficiency</td>
+                            <td>
+                                It emmits low CO<small><sub>2</sub></small> but
+                                still considered unsustainable
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Firewood</td>
+                            <td>Least Expensive</td>
+                            <td>Low - Medium Efficiency</td>
+                            <td>
+                                It is enviromental Friendly because it emmits
+                                CO<small><sub>2</sub></small>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Conclusion</h2>
+
+                <p>
+                    After comparing <strong>coal</strong>,
+                    <strong>peat</strong>, and <strong>firewood</strong> across
+                    efficiency, cost, environmental impact, and practical
+                    applications, here's the final verdict:
+                </p>
+                <div class="highlight">
+                    <p>
+                        <strong>Firewood</strong> emerges as the best overall
+                        choice <em>if sourced sustainably</em>. It offers a
+                        balance of affordability, renewability, and moderate
+                        environmental impact—especially when using efficient
+                        stoves and seasoned hardwood.
+                    </p>
+                </div>
+                <br />
+                <ul>
+                    <li>
+                        <strong>Coal</strong> is highly efficient and reliable
+                        but comes with serious environmental and health
+                        drawbacks.
+                    </li>
+                    <li>
+                        <strong>Peat</strong> is moderately priced and easy to
+                        ignite, but its ecological damage and low renewability
+                        make it less favorable.
+                    </li>
+                    <li>
+                        <strong>Firewood</strong> is cost-effective, renewable,
+                        and widely accessible, making it ideal for domestic
+                        heating and rural use.
+                    </li>
+                </ul>
+
+                <p>
+                    For eco-conscious users and long-term sustainability,
+                    firewood is the most responsible and practical
+                    option—especially when paired with modern combustion
+                    technologies.
+                </p>
+            </div>
+        </div>
+        <div style="color: grey; text-align: center; margin-top: 20px">Dev By Prince &copy; 2025</div>
+    </body>
+</html>
